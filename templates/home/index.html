@@ -163,8 +163,8 @@
                         <a href="{% url 'home:etude_sol' %}" class="text-dark">
                             <div class="bg-white text-center py-4">
                                 <div class="px-4 pb-0 py-2">
-                                    <h6>Géo-Strata</h6>
-                                    <small><i>Pour les études des sols, sous-sol et eau</i></small>
+                                    <h5>Bureau d’études</h5>
+                                    {% comment %} <small><i>Pour les études des sols, sous-sol et eau</i></small> {% endcomment %}
                                 </div>
                             </div>
                             <img src="{% static 'img/geo-strata.png' %}" alt="">
@@ -174,8 +174,8 @@
                         <a href="{% url 'home:emploi' %}" class="text-dark">
                             <div class="bg-white text-center py-4">
                                 <div class="px-4 pb-0 py-2">
-                                    <h6>Strata-Emploi</h6>
-                                    <small><i>Facilitation et opportunités d’emploi et stages</i></small>
+                                    <h5>Facilitation d’affaires</h5>
+                                    {% comment %} <small><i>Facilitation et opportunités d’emploi et stages</i></small> {% endcomment %}
                                 </div>
                             </div>
                             <img src="{% static 'img/emploi.jpg' %}" alt="">
@@ -185,8 +185,11 @@
                         <a href="{% url 'home:formation' %}" class="text-dark">
                             <div class="bg-white text-center py-4">
                                 <div class="px-4 pb-0 py-2">
-                                    <h6>Strata-Formation</h6>
-                                    <small><i>Formationet renforcement des capacités</i></small>
+                                    <h6>
+                                        Appui conseil dans la coordination des activités de gestion de l’environnement,
+                                        reboisement, gestion des forêts et assainissement
+                                    </h6>
+                                    {% comment %} <small><i>Formationet renforcement des capacités</i></small> {% endcomment %}
                                 </div>
                             </div>
                             <img src="{% static 'img/strata-formation.png' %}" alt="">
@@ -196,8 +199,8 @@
                         <a href="{% url 'home:emploi' %}" class="text-dark">
                             <div class="bg-white text-center py-4">
                                 <div class="px-4 pb-0 py-2">
-                                    <h6>Strata-RH</h6>
-                                    <small><i>Gestion des ressources humaines</i></small>
+                                    <h5>Construction et réhabilitation (Génie civil)</h5>
+                                    {% comment %} <small><i>Gestion des ressources humaines</i></small> {% endcomment %}
                                 </div>
                             </div>
                             <img src="{% static 'img/strata-rh.png' %}" alt="">
@@ -207,55 +210,11 @@
                         <a href="{% url 'home:immobilier' %}" class="text-dark">
                             <div class="bg-white text-center py-4">
                                 <div class="px-4 pb-0 py-2">
-                                    <h6>Strata-Immo</h6>
-                                    <small><i>Businness et investissement immobilier</i></small>
+                                    <h5>Informatique/innovation en nouvelle technologie Commerces générales</h5>
+                                    {% comment %} <small><i>Businness et investissement immobilier</i></small> {% endcomment %}
                                 </div>
                             </div>
                             <img src="{% static 'img/immo.webp' %}" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-3 blog-item wow fadeInUp" data-wow-delay=".6s">
-                        <a href="{% url 'home:service' %}" class="text-dark">
-                            <div class="bg-white text-center py-4">
-                                <div class="px-4 pb-0 py-2">
-                                    <h6>Strata-Service</h6>
-                                    <small><i>Prestationde service et main d'oeuvre</i></small>
-                                </div>
-                            </div>
-                            <img src="{% static 'img/strata-services.png' %}" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-3 blog-item wow fadeInUp" data-wow-delay=".6s">
-                        <a href="{% url 'home:entrepreneur' %}" class="text-dark">
-                            <div class="bg-white text-center py-4">
-                                <div class="px-4 pb-0 py-2">
-                                    <h6>Strata-Entrepreneur</h6>
-                                    <small><i>L'orientationet assistance entrepreneuriale</i></small>
-                                </div>
-                            </div>
-                            <img src="{% static 'img/strata_entrepreneur.jpg' %}" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-3 blog-item wow fadeInUp" data-wow-delay=".6s">
-                        <a href="{% url 'home:partenariat' %}" class="text-dark">
-                            <div class="bg-white text-center py-4">
-                                <div class="px-4 pb-0 py-2">
-                                    <h6>Partenariat et affilliation</h6>
-                                    <small><i>Strata et ses partenaires</i></small>
-                                </div>
-                            </div>
-                            <img src="{% static 'img/partenariat.jpg' %}" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-3 blog-item wow fadeInUp" data-wow-delay=".6s">
-                        <a href="#" class="text-dark">
-                            <div class="bg-white text-center py-4">
-                                <div class="px-4 pb-0 py-2">
-                                    <h6>Plus de services</h6>
-                                    <small><i>Rechercher un service</i></small>
-                                </div>
-                            </div>
-                            <img src="{% static 'img/strata-plus.png' %}" alt="">
                         </a>
                     </div>
                 </div>
