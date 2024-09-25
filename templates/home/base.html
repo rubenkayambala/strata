@@ -31,16 +31,8 @@
                             </div>
                             <hr class="my-2 py-1">
                             <a href="{% url 'home:home' %}" class="nav-item nav-link active">Accueil</a>
-                            <a href="{% url 'home:etude_sol' %}" class="nav-item nav-link">Geo-Strata</a>
-                            <a href="{% url 'home:emploi' %}" class="nav-item nav-link">Strata-Emploi</a>
-                            <a href="{% url 'home:immobilier' %}" class="nav-item nav-link">Strata-Immo</a>
-                            <a href="{% url 'home:entrepreneur' %}" class="nav-item nav-link">Strata-Entrepreneur</a>
-                            <a href="{% url 'home:formation' %}" class="nav-item nav-link">Strata-Formation</a>
-                            <a href="{% url 'home:achat' %}" class="nav-item nav-link">Facilitation achat en ligne</a>
-                            <a href="{% url 'home:service' %}" class="nav-item nav-link">Strata-Services</a>
-                            <a href="{% url 'home:service' %}" class="nav-item nav-link">Strata-Services</a>
-                            <a href="{% url 'home:partenariat' %}" class="nav-item nav-link">Partenariat & Affiliation</a>
-                            <a href="#footer" class="nav-item nav-link">A propos</a>
+                            <a href="#" class="nav-item nav-link">A propos</a>
+                            <a href="#" class="nav-item nav-link">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +61,6 @@
             <div class="container">
                 <div class="d-flex justify-content-between">
                     <span>.</span>
-                    
                 </div>
                 <div class="row g-5 box animated slideInUp justify-content-center position-relative">
                     <div class="col-lg-6 form bg-white" data-wow-delay=".5s" style="border-radius: 10px; margin-top: 0px; position: relative;;">
@@ -451,7 +442,7 @@
         <div id="SearchBar" class="container-fluid form-hide top-search-btn">
             <div class="container">
                 <div class="search mb-2 text-center">
-                    <form action="{% url 'home:big-search' %}" method="get" class="w-100">
+                    <form action="#" method="get" class="w-100">
                         <input type="text" name="query" placeholder="Tapez votre recherche..." style="width: 88%; padding: 10px 80px 10px 10px;">
                         <button tupe="submit" style="width: 10%; padding: 10px 0px; background-color: #ff5950; color: #fff;"><i class="fa fa-search"></i></button>
                     </form>
@@ -465,7 +456,6 @@
             <div class="container">
                 <div class="d-flex justify-content-between">
                     <span>.</span>
-                    
                 </div>
                 <div class="row g-5 box wow fadeInUp justify-content-between">
                     <div class="col-lg-6 d-none d-lg-block">
@@ -477,21 +467,21 @@
                                 </div>
                                 <img src="{% static 'img/close.png' %}" alt="" class="login-btn" id="login-close" style="width: 15px; height: 15px; margin-top: -15px; cursor: pointer;">
                         </div>
-                        <form method="post" action="{% url 'accounts:login' %}" class="rounded contact-form mb-3">
+                        <form method="post" action="#" class="rounded contact-form mb-3">
                             {% csrf_token %}
                             <div class="mb-4">
-                                <input type="text" class="form-control p-3" name="username_email" placeholder="Identifiant" required>
+                                <input type="email" class="form-control p-3" name="username_email" placeholder="Email" required>
                             </div>
                             <div class="mb-4">
                                 <input type="password" class="form-control p-3" name="password" placeholder="Mot de passe" required>
                             </div>
                             <button class="btn btn-primary border-0 py-2 d-block w-100 mb-2" type="submit">Se connecter</button>
-                            <p class="m-0 text-center">ou <a href="{% url 'accounts:register' %}"><small>S'enregistrer</small></a></p>
-                            <hr>
+                            <p class="m-0 text-center">ou <a href="#"><small>S'enregistrer</small></a></p>
+                            {% comment %} <hr>
                             <div class="text-center">
                                 <small>Se connecter avec</small><br>
                                 <button type="button" class="btn btn-danger d-block mt-2 w-100">Google</button>
-                            </div>
+                            </div> {% endcomment %}
                         </form>
                     </div>
                 </div>
@@ -505,9 +495,13 @@
                 <div class="row justify-content-between g-4 footer-inner">
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
-                            <h4 class="text-white text-center fw-bold mb-4">A propos Strata.</h4>
+                            <h4 class="text-white text-center fw-bold mb-4">Qui sommes-nous ?</h4>
                             <div class="text-center">
-                                <small>Une entreprise dynamique, passionnée pour la recherche et l’innovation ; engager à apporter des solutions aux besoins de base des entreprises et des particuliers.</small>
+                                <small>
+                                Le Trust Business Five est une société à responsabilité limitée créer 
+                                pour pallier aux insuffisances d’offres des services de qualité en
+                                République Démocratique du Congo et à l’étranger.
+                                </small>
                             </div>
                         </div>
                     </div>
@@ -515,18 +509,17 @@
                         <div class="footer-item">
                             <h4 class="text-white fw-bold mb-4">Liens utiles</h4>
                             <div class="d-flex flex-column align-items-start">
-                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>A propos de nous</a>
+                                <a class="btn btn-link ps-0" href="#"><i class="fa fa-check me-2"></i>A propos de nous</a>
                                 <a class="btn btn-link ps-0" href="{% url 'home:contact' %}"><i class="fa fa-check me-2"></i>Nous Contacter</a>
-                                <a class="btn btn-link ps-0" href=""><i class="fa fa-check me-2"></i>Partenariat et affiliation</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
                             <h4 class="text-white fw-bold mb-4">Nos coordonnées</h4>
-                            <a href="" class="btn btn-link w-100 text-start ps-0 pb-3 border-bottom rounded-0"><i class="fa fa-map-marker-alt me-3"></i>Kinshasa RDC</a>
-                            <a href="" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-phone-alt me-3"></i>+000 000 000 000</a>
-                            <a href="" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-envelope me-3"></i>infos@strata-consult.com</a>
+                            <a href="#" class="btn btn-link w-100 text-start ps-0 pb-3 border-bottom rounded-0"><i class="fa fa-map-marker-alt me-3"></i>Kinshasa RDC</a>
+                            <a href="#" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-phone-alt me-3"></i>+000 000 000 000</a>
+                            <a href="#" class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"><i class="fa fa-envelope me-3"></i>infos@tbf.com</a>
                         </div>
                     </div>
                 </div>
@@ -539,7 +532,7 @@
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-                        <span>© 2023 Strata Consult, Tout droit réservé</span>
+                        <span>© 2024 TBF, Tout droit réservé</span>
                     </div>
                 </div>
             </div>
